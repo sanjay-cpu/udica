@@ -2,6 +2,11 @@ sudo: required
 
 language: python
 
+matrix:
+    include:
+        - arch: amd64
+        - arch: ppc64le
+
 services:
     - docker
 
